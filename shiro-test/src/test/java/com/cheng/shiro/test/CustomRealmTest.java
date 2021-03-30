@@ -26,6 +26,7 @@ public class CustomRealmTest {
         // 2.声明CustomRealm使用了Md5加密
         HashedCredentialsMatcher matcher = new HashedCredentialsMatcher();
         matcher.setHashAlgorithmName("md5");
+        // 设置加密次数
         matcher.setHashIterations(1);
         customRealm.setCredentialsMatcher(matcher);
 
